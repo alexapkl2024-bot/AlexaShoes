@@ -1,0 +1,559 @@
+/* DASAR */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+    background-color: #fffafd;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+
+/*  NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555 !important;
+}
+
+.navbar-brand span {
+    color: #f48fb1;
+}
+
+.nav-link {
+    color: #555 !important;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #f48fb1 !important;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding: 130px 0 70px;
+    background-color: #fff0f6;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    color: #e875a5;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 20px 0;
+    color: #4d4d4d;
+}
+
+.hero h1 span {
+    display: block;
+    color: #79b9d3;
+}
+
+.description {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f48fb1;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #e875a5;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(244, 143, 177, 0.2);
+}
+
+
+/*JUDUL SECTION*/
+
+.title {
+    margin-bottom: 45px;
+}
+
+.title p {
+    color: #e875a5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 10px 0;
+}
+
+.title span {
+    color: #888;
+}
+
+/* TENTANG KAMI */
+
+.about-section {
+    background-color: #fff8fb;
+    position: relative;
+}
+
+.about-box {
+    position: relative;
+    max-width: 1050px;
+    margin: auto;
+    padding: 55px;
+    background-color: white;
+    border-radius: 35px;
+    border: 3px solid #f9dce8;
+    box-shadow: 0 12px 30px rgba(244, 143, 177, 0.12);
+    overflow: hidden;
+}
+
+/* Bagian kiri */
+
+.about-icon {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e5f6fb;
+    border-radius: 50%;
+
+    font-size: 55px;
+
+    box-shadow: 0 8px 20px rgba(142, 197, 217, 0.2);
+}
+
+.about-box h3 {
+    color: #555;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about-tagline {
+    color: #e875a5;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Bagian kanan */
+
+.about-content {
+    padding-left: 20px;
+}
+
+.about-content h3 {
+    color: #e875a5;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-content > p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Poin-poin */
+
+.about-points {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-point {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+
+    background-color: #fff7fa;
+    border-radius: 18px;
+
+    border: 1px solid #f8dce7;
+}
+
+.point-icon {
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e5f6fb;
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+.about-point h4 {
+    margin: 0 0 5px;
+    font-size: 17px;
+    color: #555;
+}
+
+.about-point p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+}
+
+
+/* Dekorasi */
+
+.about-decoration {
+    position: absolute;
+    font-size: 35px;
+    color: #f5a9c2;
+    opacity: 0.7;
+}
+
+.decoration-one {
+    top: 20px;
+    left: 25px;
+}
+
+.decoration-two {
+    top: 35px;
+    right: 40px;
+    color: #8ec5d9;
+}
+
+.decoration-three {
+    bottom: 25px;
+    right: 30px;
+    color: #f5a9c2;
+}
+
+
+/* ==============================
+   RESPONSIVE TENTANG
+============================== */
+
+@media (max-width: 768px) {
+
+    .about-box {
+        padding: 35px 20px;
+    }
+
+    .about-content {
+        padding-left: 0;
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .about-box h3 {
+        font-size: 24px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-point {
+        text-align: left;
+    }
+
+    .decoration-one {
+        left: 15px;
+    }
+
+    .decoration-two {
+        right: 15px;
+    }
+}
+
+/* PRODUK */
+
+.products {
+    background-color: #f0f8fc;
+}
+
+.product-card {
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #f7dce7;
+    box-shadow: 0 8px 20px rgba(120, 180, 200, 0.12);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(244, 143, 177, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.product-info p {
+    color: #888;
+    line-height: 1.6;
+    min-height: 52px;
+}
+
+.product-info h4 {
+    color: #e875a5;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.btn-product {
+    width: 100%;
+    background-color: #8ec5d9;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-product:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+
+/* KEUNGGULAN */
+
+.feature-card {
+    height: 100%;
+    padding: 35px 25px;
+    text-align: center;
+    background-color: #fff8fb;
+    border: 2px solid #f8dce8;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background-color: #fff0f6;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #dff3fa;
+    color: #e875a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #888;
+    line-height: 1.6;
+}
+
+
+/* TESTIMONI */
+
+.testimonials {
+    background-color: #fff0f6;
+}
+
+.testimonial-card {
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #f8dce8;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: "“";
+    font-size: 50px;
+    color: #f5a9c2;
+    font-weight: bold;
+}
+
+.testimonial-card p {
+    color: #777;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.testimonial-card strong {
+    color: #555;
+}
+
+
+/* KONTAK */
+
+.contact {
+    padding: 80px 0;
+    background-color: #8ec5d9;
+    color: white;
+}
+
+.contact .subtitle {
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.contact > .container > .row > .col-lg-6 > p {
+    color: #f5fbfd;
+    line-height: 1.7;
+}
+
+.contact-box {
+    padding: 30px;
+    background-color: white;
+    color: #555;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.contact-box strong {
+    color: #555;
+}
+
+.contact-box .btn {
+    background-color: #f48fb1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.contact-box .btn:hover {
+    background-color: #e875a5;
+}
+
+
+/* FOOTER*/
+
+footer {
+    padding: 35px 0;
+    background-color: #fffafd;
+    color: #555;
+    border-top: 1px solid #f5dce6;
+}
+
+footer h3 {
+    font-size: 20px;
+    color: #e875a5;
+}
+
+footer p,
+footer small {
+    color: #999;
+}
+
+
+/*RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 120px 0 60px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact-box {
+        margin-top: 30px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}

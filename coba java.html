@@ -1,0 +1,29 @@
+<head>
+    <title>Latihan JS</title>
+    <style>
+        #inputLainnya { display: none; margin-top: 10px; }
+        .form-container { margin: 20px; }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Pilih jenis kendaraan</h3>
+
+        <label> <input type="radio" name="kendaraan" value="Mobil" onclick="tampilkanInput(false)">Mobil</label><br>
+		<label><input type="radio" name="kendaraan" value="Motor" onclick="tampilkanInput(false)">Motor</label><br>
+		<label> <input type="radio" name="kendaraan" value="Sepeda" onclick="tampilkanInput(false)">Sepeda</label><br>
+        <label> <input type="radio" name="kendaraan" value="Lainnya" onclick="tampilkanInput(true)">Lainnya</label>
+
+        <div id="inputLainnya">
+            <label for="kendaraanLain">Sebutkan:</label><input type="text" id="kendaraanLain" placeholder="Masukkan kendaraan">
+        </div>
+    </div>
+    <script>
+        function tampilkanInput(tampilkan) {
+            let inputLainnya = document.getElementById("inputLainnya");
+            if (tampilkan) { inputLainnya.style.display = "block"; } else {inputLainnya.style.display = "none";
+            }
+        }
+    </script>
+</body>

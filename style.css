@@ -1,0 +1,49 @@
+body {
+    shape-image-threshold: initial;
+    font-family: sans-serif;
+    background: #d4c8d3;
+}
+
+h1 {
+    font-style:oblique;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.tulisan_login {
+    font-family: fantasy;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 11pt;
+}
+
+.kotak_login {
+    width: 350px;
+    background: rgb(255, 209, 246);
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+.form_login {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+.tombol_login {
+    background: #d4a4dc;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
