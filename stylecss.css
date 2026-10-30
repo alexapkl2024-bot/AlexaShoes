@@ -1,0 +1,580 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fbfdff;
+    color: #34536d;
+}
+
+header {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px #dceaf2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    background: #b8e1f5;
+    padding: 12px 17px;
+    border-radius: 13px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.logo small {
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav button {
+    border: none;
+    background: none;
+    color: #526d83;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav button:hover {
+    color: #e88eaf;
+}
+
+button, a {
+    transition: 0.2s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-nav, .btn-utama {
+    border: none;
+    background: #dff2fc;
+    color: #315d7c;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-nav:hover, .btn-utama:hover {
+    background: #b9e2f5;
+    transform: translateY(-2px);
+}
+
+.btn-kedua {
+    border: 1px solid #9dcde5;
+    background: white;
+    color: #315d7c;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.halaman {
+    display: none;
+    padding: 55px 8%;
+    min-height: 70vh;
+    animation: muncul 0.3s ease;
+}
+
+.halaman.aktif {
+    display: block;
+}
+
+@keyframes muncul {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 430px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.label {
+    color: #e58eaf;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #e88eaf;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    background: #eaf7fc;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 330px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.keunggulan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.keunggulan div, .info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #e5eff5;
+    text-align: center;
+}
+
+.keunggulan h3 {
+    margin: 12px 0;
+}
+
+.keunggulan p, .info-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #71869a;
+}
+
+.judul-halaman {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.judul-halaman h1 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.judul-halaman p {
+    color: #71869a;
+    line-height: 1.7;
+}
+
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.produk-card {
+    background: white;
+    border: 1px solid #e3edf3;
+    padding: 14px;
+    border-radius: 22px;
+    box-shadow: 0 5px 18px #edf3f7;
+}
+
+.produk-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    object-position: center;
+    background: #f7fbfd;
+    border-radius: 15px;
+}
+
+.produk-card h3 {
+    margin: 15px 5px 8px;
+}
+
+.produk-card p {
+    margin: 0 5px;
+    color: #71869a;
+    font-size: 14px;
+    min-height: 40px;
+    line-height: 1.5;
+}
+
+.harga-produk {
+    margin: 15px 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produk-card button {
+    width: 100%;
+}
+
+.isi-informasi, .kontak-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #e5eff5;
+    line-height: 1.9;
+}
+
+.isi-informasi h2 {
+    margin: 15px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+}
+
+.kontak-box {
+    text-align: center;
+}
+
+.kontak-box p {
+    margin: 15px 0 25px;
+}
+
+.form-box {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 5px 22px #e5eff5;
+}
+
+form label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9e7ef;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background: #fbfdff;
+}
+
+form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.total-box {
+    margin: 20px 0;
+    padding: 18px;
+    background: #edf8fd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.total-box strong {
+    color: #df80a4;
+}
+
+.full {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.nota {
+    margin-top: 30px;
+    padding: 25px;
+    border: 2px dashed #9dcde5;
+    border-radius: 15px;
+    background: #fbfdff;
+    line-height: 1.8;
+}
+
+.nota h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nota table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.nota td {
+    padding: 8px 4px;
+    border-bottom: 1px solid #e4edf3;
+}
+
+.btn-cetak {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #eaf6fc;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .daftar-produk {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        width: 100%;
+        gap: 12px;
+    }
+
+    nav button {
+        font-size: 12px;
+    }
+
+    .btn-nav {
+        width: 100%;
+    }
+
+    .halaman {
+        padding: 35px 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .keunggulan, .info-grid, .daftar-produk {
+        grid-template-columns: 1fr;
+    }
+
+    .produk-card img {
+        height: 250px;
+    }
+
+    .judul-halaman h1 {
+        font-size: 28px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .total-box {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #notaPesanan, #notaPesanan * {
+        visibility: visible;
+    }
+
+    #notaPesanan {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .btn-cetak {
+        display: none;
+    }
+}
+
+/* FOOTER AQULEXA */
+.footer {
+    background: linear-gradient(135deg, #e4f4fc, #fff0f5);
+    padding: 50px 8% 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-brand h2 {
+    color: #34536d;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #71869a;
+}
+
+.footer-brand .footer-slogan {
+    color: #e58eaf;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-container h3 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #34536d;
+}
+
+.footer-menu,
+.footer-sosmed,
+.footer-kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-menu button,
+.footer-sosmed a {
+    background: none;
+    border: none;
+    color: #71869a;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-menu button:hover,
+.footer-sosmed a:hover {
+    color: #e58eaf;
+    transform: translateX(3px);
+}
+
+.footer-kontak p {
+    font-size: 14px;
+    color: #71869a;
+    line-height: 1.6;
+}
+
+.footer-btn {
+    border: none;
+    background: #d5edf9;
+    color: #34536d;
+    padding: 11px 17px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    background: #f5dce8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #d4e5ee;
+    padding-top: 20px;
+    text-align: center;
+    color: #71869a;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 35px 20px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

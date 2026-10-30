@@ -1,16 +1,243 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Biodata Singkat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQULEXA Tumbler</title>
+    <link rel="stylesheet" href="stylecss.css">
 </head>
 <body>
-    <h1 align="center">"Hello"</h1>
-    <h1 align="center"> Biodata Singkat</h1>
-    <p><strong><em>Nama:</em></strong> Alexandra Aura Wijaya</p>
-    <p><strong>NIM:</strong> 63050250004</p>
-    <p><strong>Kelas:</strong> 3A Bisnis</p>
-    <p><strong>Deskripsi:</strong> Saya mahasiswa yang sedang mempelajari Pemrograman Web.</p>
-    <p><strong><a href="https://www.youtube.com/"> YOUTUBE</a></strong></p>
-    <img src="BUKTI SUBMIT.png" alt="Foto Profil Saya" width="300">
+
+<header>
+    <div class="logo" onclick="bukaHalaman('beranda')">
+        <span class="logo-icon">A</span>
+        <div>
+            <h2>AQULEXA</h2>
+            <small>T U M B L E R</small>
+        </div>
+    </div>
+
+    <nav>
+        <button onclick="bukaHalaman('beranda')">Beranda</button>
+        <button onclick="bukaHalaman('produk')">Produk</button>
+        <button onclick="bukaHalaman('tentang')">Tentang Kami</button>
+        <button onclick="bukaHalaman('informasi')">Informasi</button>
+        <button onclick="bukaHalaman('kontak')">Kontak</button>
+    </nav>
+
+    <button class="btn-nav" onclick="bukaHalaman('produk')">
+        Belanja Sekarang ↗
+    </button>
+</header>
+
+<main>
+
+    <!-- BERANDA -->
+    <section id="beranda" class="halaman aktif">
+        <div class="hero">
+            <div class="hero-text">
+                <span class="label">WELCOME TO AQULEXA</span>
+                <h1>Stay Hydrated,<br><span>Stay Lovely!</span></h1>
+                <p>
+                    Temukan tumbler dengan desain menarik untuk menemani
+                    setiap aktivitas dan membuat harimu lebih berwarna.
+                </p>
+                <button class="btn-utama" onclick="bukaHalaman('produk')">
+                    Belanja Sekarang →
+                </button>
+                <button class="btn-kedua" onclick="bukaHalaman('tentang')">
+                    Tentang Kami
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/banner.jpg" alt="Koleksi tumbler AQULEXA">
+            </div>
+        </div>
+
+        <div class="keunggulan">
+            <div>♡<h3>Desain Menarik</h3><p>Beragam pilihan model dan warna.</p></div>
+            <div>✿<h3>Teman Aktivitas</h3><p>Cocok untuk sekolah, kuliah, dan kerja.</p></div>
+            <div>☆<h3>Harga Terjangkau</h3><p>Pilihan tumbler dengan harga bersahabat.</p></div>
+        </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="halaman">
+        <div class="judul-halaman">
+            <span class="label">OUR COLLECTION</span>
+            <h1>Produk AQULEXA</h1>
+            <p>Pilih tumbler favoritmu dan temukan teman minum untuk setiap hari.</p>
+        </div>
+
+        <div class="daftar-produk" id="daftarProduk"></div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="halaman">
+        <div class="judul-halaman">
+            <span class="label">ABOUT AQULEXA</span>
+            <h1>Tentang Kami</h1>
+        </div>
+
+        <div class="isi-informasi">
+            <h2>Welcome to AQULEXA!</h2>
+            <p>
+                AQULEXA merupakan usaha yang menyediakan berbagai pilihan
+                tumbler dengan desain menarik dan harga terjangkau.
+                Kami ingin menghadirkan produk yang dapat menemani aktivitas
+                sehari-hari, baik saat kuliah, bekerja, maupun bepergian.
+            </p>
+            <p>
+                Melalui AQULEXA, pelanggan dapat menemukan tumbler dengan
+                berbagai pilihan model dan warna sesuai kebutuhan dan selera.
+            </p>
+            <h2>Our Slogan</h2>
+            <p><b>“Stay Hydrated, Stay Lovely!”</b></p>
+            <p>A little sip of happiness, every day.</p>
+        </div>
+    </section>
+
+    <!-- INFORMASI -->
+    <section id="informasi" class="halaman">
+        <div class="judul-halaman">
+            <span class="label">CUSTOMER INFORMATION</span>
+            <h1>Informasi Pembelian</h1>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📦 Pengiriman</h3>
+                <p>Pesanan akan diproses setelah data pemesanan diisi. Informasi pengiriman dapat dikonfirmasi melalui kontak AQULEXA.</p>
+            </div>
+            <div class="info-card">
+                <h3>↩️ Pengembalian</h3>
+                <p>Apabila produk diterima dalam kondisi rusak, silakan hubungi kontak AQULEXA dengan menyertakan bukti foto.</p>
+            </div>
+            <div class="info-card">
+                <h3>💳 Pembayaran</h3>
+                <p>Metode pembayaran akan dikonfirmasi oleh admin. Website ini belum terhubung dengan layanan pembayaran otomatis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="halaman">
+        <div class="judul-halaman">
+            <span class="label">GET IN TOUCH</span>
+            <h1>Hubungi Kami</h1>
+            <p>Ada pertanyaan mengenai produk AQULEXA? Hubungi kami melalui WhatsApp.</p>
+        </div>
+
+        <div class="kontak-box">
+            <h2>AQULEXA Customer Service</h2>
+            <p>Kami siap membantu memberikan informasi mengenai produk dan pembelian.</p>
+            <a class="btn-utama" id="linkWhatsApp" href="https://wa.me/6283812907991" target="_blank">
+                Hubungi WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- PEMESANAN -->
+    <section id="pemesanan" class="halaman">
+        <div class="judul-halaman">
+            <span class="label">ORDER FORM</span>
+            <h1>Formulir Pemesanan</h1>
+            <p>Lengkapi data berikut untuk membuat pesanan AQULEXA.</p>
+        </div>
+
+        <div class="form-box">
+            <form id="formPesanan">
+                <label>Nama Lengkap</label>
+                <input type="text" id="namaPembeli" placeholder="Masukkan nama lengkap" required>
+
+                <label>Nomor HP</label>
+                <input type="tel" id="nomorPembeli" placeholder="Masukkan nomor HP" required>
+
+                <label>Alamat Lengkap</label>
+                <textarea id="alamatPembeli" placeholder="Masukkan alamat pengiriman" required></textarea>
+
+                <label>Pilih Produk</label>
+                <select id="pilihanProduk" required></select>
+
+                <label>Jumlah Pembelian</label>
+                <input type="number" id="jumlahProduk" min="1" value="1" required>
+
+                <div class="total-box">
+                    Total Pembayaran:
+                    <strong id="totalHarga">Rp 0</strong>
+                </div>
+
+                <label>Metode Pembayaran</label>
+                <select id="metodePembayaran" required>
+                    <option value="">Pilih pembayaran</option>
+                    <option value="Transfer Bank (konfirmasi admin)">Transfer Bank</option>
+                    <option value="COD (konfirmasi admin)">COD</option>
+                    <option value="Pembayaran lainnya (konfirmasi admin)">Lainnya</option>
+                </select>
+
+                <button type="submit" class="btn-utama full">
+                    Buat Pesanan
+                </button>
+            </form>
+
+            <!-- NOTA AKAN MUNCUL DI SINI -->
+            <div id="notaPesanan" class="nota" hidden></div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>♡ AQULEXA</h2>
+            <p class="footer-slogan">Stay Hydrated, Stay Lovely!</p>
+            <p>
+                Temukan tumbler favoritmu dan jadikan
+                setiap tegukan lebih menyenangkan.
+            </p>
+        </div>
+
+        <div class="footer-menu">
+            <h3>Menu</h3>
+            <button onclick="bukaHalaman('beranda')">Beranda</button>
+            <button onclick="bukaHalaman('produk')">Produk</button>
+            <button onclick="bukaHalaman('tentang')">Tentang Kami</button>
+            <button onclick="bukaHalaman('informasi')">Informasi</button>
+        </div>
+
+        <div class="footer-sosmed">
+            <h3>Ikuti Kami</h3>
+            <a href="https://www.instagram.com/USERNAME/"
+               target="_blank">📷 Instagram</a>
+
+            <a href="https://www.tiktok.com/@USERNAME"
+               target="_blank">♪ TikTok</a>
+
+            <a href="mailto:EMAILKAMU@gmail.com">
+                ✉ Email
+            </a>
+        </div>
+
+        <div class="footer-kontak">
+            <h3>Customer Service</h3>
+            <p>♡ Kami siap membantu kebutuhanmu!</p>
+            <button onclick="bukaHalaman('kontak')" class="footer-btn">
+                Hubungi Kami →
+            </button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="tahun"></span> AQULEXA Tumbler. All Rights Reserved.</p>
+        <p>Made with ♡ for your lovely day.</p>
+    </div>
+</footer>
+
+<script src="scriptjs.js"></script>
 </body>
 </html>
